@@ -1,0 +1,22 @@
+.GraphicPanel{
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    position: relative;
+}
+.GraphicPanel .title{
+    margin: 0;
+    padding: 10px 5px 10px 0;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: 24px;
+    width: 120px;
+    text-align: end;
+    background-color: yellow;
+    border-radius: 20px 0 0 20px ;
+    color: rgb(255, 0, 0);
+}
+
+.GraphicPanel .bottom{
+    padding: 110px 0 0 0;
+}

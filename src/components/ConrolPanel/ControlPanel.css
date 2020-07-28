@@ -1,0 +1,17 @@
+.ControlPanel{
+    background-color: rgb(0, 174, 255);
+}
+.ControlPanel .title{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(236,236,236,1) 100%);
+    color: #fff;
+    margin: 0;
+    padding: 12px 0 8px 20px;
+    text-align: start;
+    font-size: 26px;
+}
+
+.ControlPanel .bottom{
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+        
+}

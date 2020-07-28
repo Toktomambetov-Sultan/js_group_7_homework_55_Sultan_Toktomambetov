@@ -1,0 +1,66 @@
+.IngredientBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.IngredientBlock .addBtn{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+.IngredientBlock .addBtn:hover{
+    border: 1px solid green;
+}
+.IngredientBlock .addBtn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.IngredientBlock .addBtn:active::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 128, 0, 0.37);
+}
+.IngredientBlock .addBtn:active,
+.IngredientBlock .addBtn:focus{
+    outline: none;
+}
+.IngredientBlock .image{
+    width: 100%;
+    height: 100px;
+}
+.IngredientBlock .name{
+    font-size: 24px;
+    color: #000;
+}
+.IngredientBlock .deleteBtn{
+    font-size: 20px;
+    padding: 5px 10px;  
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+}
+.IngredientBlock .deleteBtn:active,
+.IngredientBlock .deleteBtn:focus{
+    outline: none;
+}
+.IngredientBlock .deleteBtn:hover{
+    text-shadow: 0 0 5px #fff;
+}
+.IngredientBlock .deleteBtn:active{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
