@@ -9,7 +9,7 @@ export default function IngredientBlock(props) {
             </button>
             <span className='name'>{props.name}</span>
             <span className="count">x{props.count}</span>
-            <button className="deleteBtn">remove</button>
+            <button className="deleteBtn" onClick={props.deleteIngredient}>remove</button>
         </div>
     )
 }

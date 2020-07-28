@@ -10,10 +10,18 @@ function App() {
     copyOrder.push({ name, id: new Date().getTime() });
     setOrder(copyOrder);
   };
+  const deleteIngredient = (name) => {
+    const copyOrder = [...order];
+    const index = copyOrder.findIndex(elem => elem.name === name);
+    if(index+1){
+      copyOrder.splice(index, 1);
+    }
+    setOrder(copyOrder);
+  }
   return (
     <div className="container App">
       <div className="item">
-        <ConrolPanel title="Ingredients" order={order} addIngredient={addNewIngredient} />
+        <ConrolPanel title="Ingredients" order={order} deleteIngredient={deleteIngredient} addIngredient={addNewIngredient} />
       </div>
       <div className="item">
         <GraphicPanel title="Burger" order={order} />
