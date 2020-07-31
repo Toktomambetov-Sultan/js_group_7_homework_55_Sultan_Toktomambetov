@@ -14,11 +14,11 @@ export default function ConrolPanel(props) {
                         name={ingredient.name}
                         image={ingredient.image}
                         count={props.order.reduce((count, elem) => (elem.name === ingredient.name ? count + 1 : count), 0)}
-                        addIngredient={()=>props.addIngredient(ingredient.name)}
-                        deleteIngredient={()=>props.deleteIngredient(ingredient.name)}
+                        addIngredient={() => props.addIngredient(ingredient.name)}
+                        deleteIngredient={() => props.deleteIngredient(ingredient.name)}
                     />
                 ))}
             </div>
         </div>
-    )
+    );
 }

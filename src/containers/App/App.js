@@ -13,11 +13,11 @@ function App() {
   const deleteIngredient = (name) => {
     const copyOrder = [...order];
     const index = copyOrder.findIndex(elem => elem.name === name);
-    if(index+1){
+    if (index + 1) {
       copyOrder.splice(index, 1);
     }
     setOrder(copyOrder);
-  }
+  };
   return (
     <div className="container App">
       <div className="item">

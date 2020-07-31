@@ -19,5 +19,5 @@ export default function Burger(props) {
             </>
             <div className="BreadBottom"></div>
         </div>
-    )
+    );
 }
